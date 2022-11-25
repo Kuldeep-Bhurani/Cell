@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1304px) {
+	.hero {
+		overflow: hidden;
+	}
+	.hero video {
+		width: 150%;
+		left: -25%;
+	}
+	.container {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.container {
+		width: 800px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		overflow: hidden;
+		width: 800px;
+	}
+	.hero video {
+		width: 180%;
+		left: -40%;
+	}
+	.modal img {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 400px;
+	}
+	.parts_section h3 {
+		font-size: 2rem;
+	}
+	.hero {
+		height: 80vh;
+	}
+	.hero video {
+		width: 190%;
+		left: -45%;
+	}
+	.hero h1 {
+		font-size: 3rem;
+	}
+	.hero h2 {
+		font-size: 1.2rem;
+		margin: 3rem 0;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.hero {
+		height: 70vh;
+	}
+	.modal img {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.container {
+		width: 300px;
+	}
+	.parts_section h3 {
+		font-size: 1.5rem;
+	}
+	.hero {
+		height: 60vh;
+	}
+	.hero h1 {
+		font-size: 2rem;
+	}
+	.hero h2 {
+		font-size: 0.8rem;
+		margin: 3rem 0;
+	}
+	.parts_section {
+		margin-top: 7rem;
+	}
+	.modal img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.parts_section h3 {
+		font-size: 1.2rem;
+	}
+	.hero {
+		height: 50vh;
+	}
+	.hero h1 {
+		font-size: 1.5rem;
+	}
+	.hero h2 {
+		font-size: 0.7rem;
+		margin: 3rem 0;
+	}
+	.parts_section {
+		margin-top: 5rem;
+	}
+}

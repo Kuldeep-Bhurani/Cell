@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script defer src="./js/script.js"></script>
+    <title>Cell</title>
+</head>
+
+<body class="no-mouse">
+    <div id="cursor" class="cursor"></div>
+    <section class="hero">
+        <h1>Cell</h1>
+        <h2>A Brief On Parts Of Animal Cell</h2>
+        <video autoplay muted src="./assets/cell.mkv"></video>
+    </section>
+    <section class="parts_section">
+        <h3>Parts Of An Animal Cell</h3>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Cell Membrane</h2>
+                <a onclick="openModal1func()" class="know_more open-button-1">Know More</a>
+                <dialog class="modal" id="modal1">
+                    <h2>Cell Membrane</h2>
+                    <p>The cell membrane, also called the plasma membrane, is found in all cells and separates the
+                        interior of the cell from the outside environment. The cell membrane consists of a lipid bilayer
+                        that is semipermeable. The cell membrane regulates the transport of materials entering and
+                        exiting the cell.</p>
+                    <img src="./assets/plasma_membrane.jpg" alt="Cell Membrane">
+                    <p>The plasma membrane, or the cell membrane, provides protection for a cell. It also provides a
+                        fixed environment inside the cell, and that membrane has several different functions. One is to
+                        transport nutrients into the cell and also to transport toxic substances out of the cell.
+                        Another is that the membrane of the cell, which would be the plasma membrane, will have proteins
+                        on it which interact with other cells. Those proteins can be glycoproteins, meaning there's a
+                        sugar and a protein moiety, or they could be lipid proteins, meaning that there's a fat and a
+                        protein. And those proteins which stick outside of the plasma membrane will allow for one cell
+                        to interact with another cell. The cell membrane also provides some structural support for a
+                        cell. And there are different types of plasma membranes in different types of cells, and the
+                        plasma membrane has in it in general a lot of cholesterol as its lipid component. That's
+                        different from certain other membranes from within the cell. Now, there are different plants and
+                        different microbes, such as bacteria and algae, which have different protective mechanisms. In
+                        fact, they have a cell wall outside of them, and that cell wall is much tougher and is
+                        structurally more sound than a plasma membrane is.</p>
+                    <a class="button close-button-1">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/membrane.png" alt="cell membrane" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Nucleus</h2>
+                <a onclick="openModal2func()" class="know_more open-button-2">Know More</a>
+                <dialog class="modal" id="modal2">
+                    <h2>Nucleus</h2>
+                    <p>A nucleus, as related to genomics, is the membrane-enclosed organelle within a cell that
+                        contains the chromosomes. An array of holes, or pores, in the nuclear membrane allows for the
+                        selective passage of certain molecules (such as proteins and nucleic acids) into and out of the
+                        nucleus.</p>
+                    <img src="./assets/Nucleus.jpg" alt="nucleus">
+                    <p>The nucleus is one of the most obvious parts of the cell when you look at a picture of the cell.
+                        It's in the middle of the cell, and the nucleus contains all of the cell's chromosomes, which
+                        encode the genetic material. So this is really an important part of the cell to protect. The
+                        nucleus has a membrane around it that keeps all the chromosomes inside and makes the distinction
+                        between the chromosomes being inside the nucleus and the other organelles and components of the
+                        cell staying outside. Sometimes things like RNA need to traffic between the nucleus and the
+                        cytoplasm, and so there are pores in this nuclear membrane that allow molecules to go in and out
+                        of the nucleus. It used to be thought that the nuclear membrane only allowed molecules to go
+                        out, but now it's realized that there is an active process also for bringing molecules into the
+                        nucleus.</p>
+                    <a class="button close-button-2">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/nucleus.png" alt="nucleus" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Endoplasmic Reticulum</h2>
+                <a onclick="openModal3func()" class="know_more open-button-3">Know More</a>
+                <dialog class="modal" id="modal3">
+                    <h2>Endoplasmic Reticulum</h2>
+                    <p>Endoplasmic reticulum is a network of membranes inside a cell through which proteins and other
+                        molecules move. Proteins are assembled at organelles called ribosomes. When proteins are
+                        destined to be part of the cell membrane or exported from the cell, the ribosomes assembling
+                        them attach to the endoplasmic reticulum, giving it a rough appearance. Smooth endoplasmic
+                        reticulum lacks ribosomes and helps synthesize and concentrate various substances needed by the
+                        cell.</p>
+                    <img src="./assets/endoplasmic_reticulum_smooth.jpg" alt="SER">
+                    <img src="./assets/endoplasmic_reticulum_rough.jpg" alt="RER">
+                    <p>The endoplasmic reticulum can either be smooth or rough, and in general its function is to
+                        produce proteins for the rest of the cell to function. The rough endoplasmic reticulum has on it
+                        ribosomes, which are small, round organelles whose function it is to make those proteins.
+                        Sometimes, when those proteins are made improperly, the proteins stay within the endoplasmic
+                        reticulum. They're retained and the endoplasmic reticulum becomes engorged because it seems to
+                        be constipated, in a way, and the proteins don't get out where they're suppose to go. Then
+                        there's the smooth endoplasmic reticulum, which doesn't have those ribosomes on it. And that
+                        smooth endoplasmic reticulum produces other substances needed by the cell. So the endoplasmic
+                        reticulum is an organelle that's really a workhorse in producing proteins and substances needed
+                        by the rest of the cell.</p>
+                    <a class="button close-button-3">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/er.png" alt="er" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Cytoplasm</h2>
+                <a onclick="openModal4func()" class="know_more open-button-4">Know More</a>
+                <dialog class="modal" id="modal4">
+                    <h2>Cytoplasm</h2>
+                    <p>Cytoplasm is the gelatinous liquid that fills the inside of a cell. It is composed of water,
+                        salts, and various organic molecules. Some intracellular organelles, such the nucleus and
+                        mitochondria, are enclosed by membranes that separate them from the cytoplasm. </p>
+                    <img src="./assets/cytoplasm.jpg" alt="Cytoplasm">
+                    <p>Cytoplasm's a funny term. So what does "cyto" mean? "Cyto" means "cell", "plasm" means "stuff",
+                        so it's "cell stuff". So think about a cell as a big water balloon, and the water balloon has
+                        little pieces of fruit floating around in it. And the cytoplasm is the water in the water
+                        balloon, and it's a little bit thicker than water, but it makes up the majority of the inside of
+                        most cells. Now, inside the cell, inside that water balloon, there's a nucleus and there's other
+                        so-called organelles, like mitochondria, or lysosomes, or the endoplasmic reticulum and other
+                        unpronounceable organelles, but the cytoplasm is the ocean in which all of these organelles
+                        float.</p>
+                    <a class="button close-button-4">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/cytoplasm.png" alt="cytoplasm" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Golgi Apparatus</h2>
+                <a onclick="openModal5func()" class="know_more open-button-5">Know More</a>
+                <dialog class="modal" id="modal5">
+                    <h2>Golgi Apparatus</h2>
+                    <p>A Golgi body, also known as a Golgi apparatus, is a cell organelle that helps process and package
+                        proteins and lipid molecules, especially proteins destined to be exported from the cell. Named
+                        after its discoverer, Camillo Golgi, the Golgi body appears as a series of stacked membranes.
+                    </p>
+                    <img src="./assets/golgi_body.jpg" alt="Golgi Apparatus">
+                    <p>The Golgi body is a portion of the cell that's made up of membranes, and there's different types
+                        of membranes. Some of them are tubules, and some of them are vesicles. The Golgi is located
+                        right near the nucleus. It's called a perinuclear body, and it's actually right near the
+                        endoplasmic reticulum as well. And when proteins come out of the endoplasmic reticulum, they go
+                        into the Golgi for further processing. For example, carbohydrates are put on some of the
+                        proteins, and then afterwards these glycoproteins--meaning they have carbohydrate as well as
+                        protein on them, these glycoproteins move out of the Golgi to the rest of the cell. And they do
+                        so inside other vesicles. Those vesicles are actually made from the Golgi network. In fact, one
+                        of the functions of the Golgi is to make new vesicles out of the existing membrane of the Golgi
+                        and put into those vesicles the glycoproteins and other substances that are made in the Golgi
+                        network. And then those vesicles, filled with the Golgi products, move to the rest of the cell,
+                        usually through the cell to the plasma membrane, which is their end destination.</p>
+                    <a class="button close-button-5">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/golgi.png" alt="golgi" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Mitochondrion</h2>
+                <a onclick="openModal6func()" class="know_more open-button-6">Know More</a>
+                <dialog class="modal" id="modal6">
+                    <h2>Mitochondrion</h2>
+                    <p>Mitochondria are membrane-bound cell organelles (mitochondrion, singular) that generate most of
+                        the chemical energy needed to power the cell's biochemical reactions. Chemical energy produced
+                        by the mitochondria is stored in a small molecule called adenosine triphosphate (ATP).
+                        Mitochondria contain their own small chromosomes. Generally, mitochondria, and therefore
+                        mitochondrial DNA, are inherited only from the mother.</p>
+                    <img src="./assets/mitochondria_0.jpg" alt="Mitochondrion">
+                    <p>Mitochondria are membrane-bound organelles, but they're membrane-bound with two different
+                        membranes. And that's quite unusual for an intercellular organelle. Those membranes function in
+                        the purpose of mitochondria, which is essentially to produce energy. That energy is produced by
+                        having chemicals within the cell go through pathways, in other words, be converted. And the
+                        process of that conversion produces energy in the form of ATP, because the phosphate is a
+                        high-energy bond and provides energy for other reactions within the cell. So the mitochondria's
+                        purpose is to produce that energy. Some different cells have different amounts of mitochondria
+                        because they need more energy. So for example, the muscle has a lot of mitochondria, the liver
+                        does too, the kidney as well, and to a certain extent, the brain, which lives off of the energy
+                        those mitochondria produce. So if you have a defect in the pathways that the mitochondria
+                        usually functions with, you're going to have symptoms in the muscle, in the brain, sometimes in
+                        the kidneys as well; many different types of symptoms. And we probably don't know all of the
+                        different diseases that mitochondrial dysfunction causes.</p>
+                    <a class="button close-button-6">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/mitochondrion.png" alt="mitochondrion" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Ribosome</h2>
+                <a onclick="openModal7func()" class="know_more open-button-7">Know More</a>
+                <dialog class="modal" id="modal7">
+                    <h2>Ribosome</h2>
+                    <p>A ribosome is an intercellular structure made of both RNA and protein, and it is the site of
+                        protein synthesis in the cell. The ribosome reads the messenger RNA (mRNA) sequence and
+                        translates that genetic code into a specified string of amino acids, which grow into long chains
+                        that fold to form proteins.</p>
+                    <img src="./assets/Ribosome.jpg" alt="Ribosome">
+                    <p>A ribosome is the cellular machinery responsible for making proteins. There are many ribosomes in
+                        each cell, each made up of two subunits. These two subunits lock around the messenger RNA and
+                        then travel along the length of the messenger RNA molecule reading each three-letter codon. The
+                        ribosome serves as a docking station for the transfer RNA that matches the sequence of bases on
+                        the messenger RNA. Each three-letter codon on the messenger RNA pairs with the matching
+                        anticodon on a specific transfer RNA, and that specific RNA allows for the addition of a
+                        specific amino acid on the end of the growing protein chain. The ribosome then breaks up after
+                        the completion of the protein.</p>
+                    <a class="button close-button-7">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/ribosome.png" alt="ribosome" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">Lysosome</h2>
+                <a onclick="openModal8func()" class="know_more open-button-8">Know More</a>
+                <dialog class="modal" id="modal8">
+                    <h2>Lysosome</h2>
+                    <p>A lysosome is a membrane-bound cell organelle that contains digestive enzymes. Lysosomes are
+                        involved with various cell processes. They break down excess or worn-out cell parts. They may be
+                        used to destroy invading viruses and bacteria. If the cell is damaged beyond repair, lysosomes
+                        can help it to self-destruct in a process called programmed cell death, or apoptosis.</p>
+                    <img src="./assets/lysosome.jpg" alt="Lysosome">
+                    <p>Now, the lysosome is a specific type of organelle that's very acidic. So that means that it has
+                        to be protected from the rest of the inside of the cell. It's a compartment, then, that has a
+                        membrane around it that stores the digestive enzymes that require this acid, low-pH environment.
+                        Those enzymes are called hydrolytic enzymes, and they break down large molecules into small
+                        molecules. For example, large proteins into amino acids, or large carbohydrates into simple
+                        sugars, or large lipids into single fatty acids. And when they do that, they provide for the
+                        rest of the cell the nutrients that it needs to... So, for example, if you can't do that, it
+                        can't break down large molecules into small molecules. You'll have storage of those large
+                        molecules, and this is a disease. There's also another type of lysosome storage disease in which
+                        the small molecules that are produced from those large molecules can't get out of the lysosome.
+                        They're stored there because the transporters for moving these small molecules out are missing
+                        genetically. And finally, one other function of the lysosome is to ingest bacteria so that the
+                        bacteria can be destroyed. So the lysosomes also provide a function against infection, and the
+                        cell will often engorge a bacterium and put it into its lysosome for destruction. So here's an
+                        important organelle that has function against infection and function in a way in nutrition to
+                        break down large molecules into small molecules so that they can be reutilized.</p>
+                    <a class="button close-button-8">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/lysosome.png" alt="lysosome" class="cell_part">
+            </div>
+            <div class="box">
+                <h2 class="name">DNA</h2>
+                <a onclick="openModal9func()" class="know_more open-button-9">Know More</a>
+                <dialog class="modal" id="modal9">
+                    <h2>DNA</h2>
+                    <p>Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the
+                        development and functioning of an organism. DNA is made of two linked strands that wind around
+                        each other to resemble a twisted ladder — a shape known as a double helix. Each strand has a
+                        backbone made of alternating sugar (deoxyribose) and phosphate groups. Attached to each sugar is
+                        one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are
+                        connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds
+                        with guanine. The sequence of the bases along DNA’s backbone encodes biological information,
+                        such as the instructions for making a protein or RNA molecule. </p>
+                    <img src="./assets/DNA.jpg" alt="DNA">
+                    <p>Is there a more amazing molecule than DNA? It makes each of us who we are. The more scientists
+                        understand it, the more we all understand ourselves, one another, and the world around us. For
+                        example, did you know that we are all far more alike than we are different? In fact, the DNA
+                        from any two people is 99.9% identical, with that shared blueprint guiding our development and
+                        forming a common thread across the world. The differing 0.1% contains variations that influence
+                        our uniqueness, which when combined with our environmental and social contexts give us our
+                        abilities, our health, our behavior. How can one, single molecule contain so much mystery and
+                        wonder? We are only beginning to understand the answer to that question, which is what makes the
+                        study of DNA so exciting.</p>
+                    <a class="button close-button-9">Close</a>
+                </dialog>
+                <div class="circle"></div>
+                <img src="./assets/dna.png" alt="dna" class="cell_part">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

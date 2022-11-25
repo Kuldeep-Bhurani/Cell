@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Sintony&display=swap");
+/* font-family: 'Sintony', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e0e0e0;
+	overflow: hidden;
+}
+
+.no-mouse {
+	cursor: none;
+	overflow-y: scroll;
+}
+
+.cursor {
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 50;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	backdrop-filter: grayscale(1);
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100%, 100%;
+}
+
+.c-grow {
+	transform: scale(1.3);
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.hero {
+	height: 100vh;
+	position: relative;
+	color: #1f1539;
+}
+
+.hero video {
+	width: 100%;
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+	opacity: 0;
+	animation: fade-in ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 0.7s;
+}
+
+.hero h1,
+h2 {
+	position: absolute;
+	z-index: 2;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.hero h1 {
+	font-size: 4rem;
+	animation: fade-in ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 2.7s;
+	font-family: "Sintony", sans-serif;
+}
+
+.hero h2 {
+	font-size: 1.5rem;
+	margin: 5rem 0;
+	animation: fade-in ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+	font-family: "Inter", sans-serif;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.parts_section {
+	margin-top: 10rem;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.parts_section h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	font-family: "Sintony", sans-serif;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 1200px;
+	transform-style: preserve-3d;
+}
+
+.container .box {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 40px;
+	background: #1f1539;
+	border-radius: 20px;
+	transform-style: preserve-3d;
+}
+
+.container .box::before {
+	content: "PARTS";
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	font-size: 6em;
+	font-weight: 900;
+	color: #ffffff;
+	font-style: italic;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.container .box::after {
+	content: "OF CELL";
+	position: absolute;
+	bottom: 20px;
+	right: 16px;
+	font-size: 3.5em;
+	font-weight: 900;
+	color: #ffffff;
+	font-style: italic;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.container .box:hover::after,
+.container .box:hover::before {
+	opacity: 0.04;
+}
+
+.container .box .name {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	transform-style: preserve-3d;
+	transform: translate3d(0, 0, 75px);
+	transition: 0.5s;
+	opacity: 0;
+	z-index: 10;
+}
+
+.container .box:hover .name {
+	top: 40px;
+	opacity: 1;
+}
+
+.container .box .know_more {
+	position: absolute;
+	bottom: 0;
+	left: 150px;
+	transform-style: preserve-3d;
+	transform: translate3d(-50%, 0, 75px);
+	color: #ffffff;
+	background: #333333;
+	padding: 10px 25px;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: 0.5s;
+	opacity: 0;
+	z-index: 10;
+}
+
+.container .box:hover .know_more {
+	bottom: 30px;
+	opacity: 1;
+}
+
+.container .box .circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	transition: 0.5s;
+	background: #ffffff;
+	transform-style: preserve-3d;
+	z-index: 2;
+	transform: translate3d(-50%, -50%, 50px);
+	opacity: 1;
+}
+
+.container .box .cell_part {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 300px;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	z-index: 11;
+	transform: translate3d(-50%, -50%, 50px) rotate(15deg);
+}
+
+.container .box .circle,
+.container .box .know_more {
+	background: #9bdc28;
+}
+
+.modal {
+	margin: 2em;
+	padding: 1em;
+	border: 0;
+	box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+	overflow-y: scroll;
+}
+
+.modal h2 {
+	font-family: "Sintony", sans-serif;
+	font-size: xx-large;
+	z-index: inherit;
+	opacity: 1;
+	position: relative;
+	left: 0;
+	transform: translate(0, 0);
+}
+
+.modal p {
+	font-family: "Inter", sans-serif;
+	margin: 1rem 0;
+}
+
+.modal img {
+	width: 50%;
+	border-radius: 10px;
+}
+
+.button {
+	display: inline-block;
+	font-family: "Sintony", sans-serif;
+	margin: 0.4rem 0;
+	padding: 1rem 2rem;
+	color: white;
+	background: #1f1539;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: small;
+}
+
+.modal::backdrop {
+	background: #1f1539;
+	opacity: 0.5;
+}
